@@ -15,7 +15,7 @@ spec:
       containers:
         - name: petclinic
           # 임시값. CI가 실행되면 실제 ECR 주소(Commit SHA 태그)로 자동 변경
-          image: 609417967491.dkr.ecr.ap-northeast-2.amazonaws.com/petclinic:5b6f7b337a71cef323dd1829a4e48ac7a07ff551-typo-typo
+          image: 609417967491.dkr.ecr.ap-northeast-2.amazonaws.com/petclinic:5b6f7b337a71cef323dd1829a4e48ac7a07ff551
           ports:
             - containerPort: 8080
           # Pod가 트래픽을 받을 준비가 되었는지 확인 (Spring Boot Actuator)
