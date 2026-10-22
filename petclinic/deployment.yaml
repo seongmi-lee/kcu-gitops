@@ -21,7 +21,7 @@ spec:
           # Pod가 트래픽을 받을 준비가 되었는지 확인 (Spring Boot Actuator)
           readinessProbe:
             httpGet:
-              path: /actuator/health
+              path: /actuator/healthz
               port: 8080
             initialDelaySeconds: 20
             periodSeconds: 5
